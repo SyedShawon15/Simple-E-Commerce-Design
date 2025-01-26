@@ -704,7 +704,7 @@ footer p{
         padding: 0px 5px;
     }
     .SearchBox input::placeholder {
-        font-size: 11px;
+        font-size: 9px;
     }
     .SearchBox .fa-magnifying-glass {
         padding-left: 12px;
