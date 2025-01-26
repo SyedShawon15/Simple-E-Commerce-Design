@@ -5,13 +5,17 @@
 }
 .container{
     width: 100%;
-    height: 100vh;
 }
-.logo{
-    position: absolute;
-    left: 90px;
-    top: 50px;
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
 .logo a{
     font-size: 2rem;
     text-decoration: none;
@@ -19,11 +23,12 @@
     text-shadow: 2px 2px 30px rgb(0, 0, 0, 0.2);
     font-weight: bold;
     letter-spacing: 1;
+    margin-left: 70px;
+    line-height: 80px;
 }
 .SearchArea{
     position: fixed;
     right: 120px;
-    top: 50px;
     width: 170px;
     height: 45px;
     display: flex;
@@ -65,12 +70,6 @@
 }
 .section1 img{
     width: 350px;
-}
-.section1Button{
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translate(-90%, -50%);
 }
 .section1Button h1, h2{
     font-family: Roboto;
@@ -229,6 +228,27 @@
 }
 .ProductSection .ProductBox a:last-child{
     transition: ease-in 0.3s;
+}
+.SectionArea{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.AreaBox{
+    width: 400px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.AreaBox img{
+    width: 100%;
+    height: 100%;
+}
+.AreaBoxBtn{
+    width: 450px;
 }
 .About{
     width: 85%;
@@ -423,3 +443,372 @@ footer p{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 1099px){
+    .SectionArea{
+        flex-direction: column;
+    }
+    .AreaBox{
+        width: 450px
+    }
+    .section1Button h1{
+        padding-top: 60px;
+        font-size: 60px;
+        text-align: center;
+    }
+    .section1Button h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .aboutBox h1 {
+        font-size: 35px;
+    }
+    .aboutBox h4 {
+        font-size: 25px;
+    }
+    .aboutBox span {
+        font-weight: 500;
+    }
+    .aboutBox p {
+        font-size: 14px;
+    }
+    .WatchSection .WatchProductBox img {
+        width: 180px;
+        height: 120px;
+    }
+    .ProductSection h3 {
+        font-size: 25px;
+    }
+    .WatchSection .watchHead h1 {
+        font-size: 25px;
+    }
+    .Notification h3 {
+        font-size: 25px;
+    }
+    footer p {
+        font-size: 16px;
+    }
+    .WatchSection .WatchProductBox .BuyBtn {
+        font-size: 16px;
+    }
+    .ProductSection .ProductBox .BuyBtn {
+        font-size: 16px;
+    }
+    .ProductSection .Product .ProductBox img {
+        width: 180px;
+        height: 120px;
+    }
+    .About {
+        flex-direction: column;
+    }
+    .About .aboutBox {
+        width: 80%;
+        padding-bottom: 50px;
+    }
+    .About .aboutBox img {
+        height: 250px;
+    }
+}
+@media (max-width: 1070px){
+    .section1, .section1Button{
+        display: block;
+    }
+}
+@media (max-width: 991px){
+    .section1Button h1, h2 {
+        font-size: 40px;
+    }
+    .section1Button h1, h2{
+        font-size: 60px;
+    }
+    .AreaBox img{
+        width: 400px;
+    }
+}
+@media (max-width: 768px){
+    .SearchArea {
+        right: 50px;
+        width: 150px;
+        height: 45px;
+    }
+    .SidebarIconArea a {
+        padding: 15px 10px;
+    }
+}
+@media (max-width: 699px){
+    .aboutBox h1 {
+        font-size: 30px;
+    }
+    .aboutBox h4 {
+        font-size: 20px;
+    }
+    .aboutBox p {
+        font-size: 13px;
+    }
+    .About .aboutBox img {
+        height: 200px;
+    }
+    footer {
+        padding: 15px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .Notification .noficationInput {
+        width: 300px;
+        height: 35px;
+    }
+    .notificationBtn {
+        width: 90px;
+        height: 25px;
+    }
+}
+@media (max-width: 656px){
+    .SectionArea .AreaBox{
+        width: 300px;
+    }
+    .AreaBox img{
+        width: 100%;
+    }
+    .section1Button h1 {
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 18px;
+    }
+    .section1Button h2 {
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .section1Button .btn {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .ProductSection h3 {
+        font-size: 22px;
+    }
+    .aboutBox h1 {
+        font-size: 25px;
+    }
+    .WatchSection .watchHead h1 {
+        font-size: 22px;
+    }
+    .Notification h3 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 565px){
+    .logo a {
+        font-size: 24px;
+        margin-left: 45px;
+    }
+    .SearchArea {
+        right: 30px;
+        width: 130px;
+        height: 40px;
+    }
+    .SearchBox .fa-magnifying-glass{
+        font-size: 12px;
+        padding-left: 18px;
+    }
+    .SidebarIconArea {
+        left: 34px;
+    }
+}
+@media (max-width: 550px){
+    .SidebarIconArea {
+        left: 32px;
+    }
+}
+@media (max-width: 555px){
+    .SidebarIconArea {
+        left: 28px;
+    }
+}
+@media (max-width: 425px){
+    .logo a {
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .SearchArea {
+        right: 20px;
+        width: 110px;
+        height: 40px;
+    }
+    .SearchBox input {
+        width: 70px;
+        height: 20px;
+        padding: 0px 5px;
+    }
+    .SearchBox .fa-magnifying-glass {
+        font-size: 10px;
+        padding-left: 15px;
+    }
+    .SearchBox .Search{
+        font-size: 10px;
+    }
+    .SectionArea .AreaBox {
+        width: 240px;
+    }
+    .section1Button h1 {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 18px;
+    }
+    .section1Button h2 {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 0px;
+    }
+    .SidebarIconArea {
+        left: 21px;
+    }
+    .ProductSection h3 {
+        font-size: 18px;
+    }
+    .WatchSection .watchHead h1 {
+        font-size: 18px;
+    }
+    .Notification h3 {
+        font-size: 15px;
+    }
+    footer {
+        padding: 14px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px){
+    .container {
+        padding-bottom: 15px;
+    }
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .logo a {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+    .SearchArea {
+        right: 10px;
+        width: 110px;
+        height: 33px;
+    }
+    .SearchBox input {
+        width: 70px;
+        height: 15px;
+        padding: 0px 5px;
+    }
+    .SearchBox input::placeholder {
+        font-size: 12px;
+    }
+    .SearchBox .fa-magnifying-glass {
+        padding-left: 13px;
+    }
+    .SectionArea {
+        margin: 10px auto;
+        padding: 0px;
+    }
+    .SectionArea .AreaBox {
+        width: 200px;
+    }
+    .SidebarIconArea {
+        left: 14px;
+    }
+    .SidebarIconArea a {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+    .section1Button h1 {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 15px;
+        padding-top: 15px;
+    }
+    .section1Button h2 {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 0px;
+    }
+    .section1Button .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .ProductSection .ProductBox p {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .ProductSection .ProductBox a {
+        font-size: 14px;
+    }
+    .ProductSection .ProductBox .BuyBtn {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .ProductSection h3 {
+        font-size: 14px;
+    }
+    .aboutBox h1 {
+        font-size: 20px;
+    }
+    .aboutBox h4 {
+        font-size: 16px;
+    }
+    .aboutBox p {
+        font-size: 10px;
+    }
+    .About .aboutBox {
+        padding-bottom: 0px;
+    }
+    .Notification .noficationInput {
+        width: 220px;
+        height: 35px;
+    }
+    
+    .About {
+        width: 100%;
+        margin: auto; 
+        padding: 0;
+        padding-top: 40px;
+    }
+    .ProductSection {
+        padding: 15px 15px;
+    }
+    .ProductSection .Product .ProductBox {
+        width: 250px;
+        height: 230px;
+        margin: 10px 25px;
+    }
+    .WatchSection {
+        padding: 15px 15px;
+    }
+    .WatchSection .WatchProductBox {
+        width: 250px;
+        height: 230px;
+        margin: 10px 25px;
+    }
+    .WatchSection .WatchProductBox p {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .WatchSection .WatchProductBox a {
+        font-size: 14px;
+    }
+    .WatchSection .WatchProductBox .BuyBtn {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .Notification {
+        margin-bottom: 15px;
+    }
+   
+}
+
